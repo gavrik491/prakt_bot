@@ -2,9 +2,8 @@ import json
 
 from telegram.ext import Updater, CommandHandler
 
+updater = Updater("") # сюда нужно вставить токен бота
 
-
-updater = Updater("6047550206:AAGAF_NgE273lecrPUkRWso8h2fQwn0UWyY")
 
 def start(update, context): #Команда подключения к боту
     user_list = {}
