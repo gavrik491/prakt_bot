@@ -9,4 +9,5 @@
 * /count - Количество подключенных пользователей
 * /describe - Информация о пользователе
 * /stop - Отключиться от бота:negative_squared_cross_mark:
+
 Рабочая версия бота для проверки - https://t.me/Icit_prakt_zorin_bot
