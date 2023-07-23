@@ -2,7 +2,7 @@ import json
 
 from telegram.ext import Updater, CommandHandler
 
-updater = Updater("6047550206:AAGAF_NgE273lecrPUkRWso8h2fQwn0UWyY") # сюда нужно вставить токен бота
+updater = Updater("") # сюда нужно вставить токен бота
 
 
 def start(update, context):
