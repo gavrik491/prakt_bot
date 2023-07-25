@@ -2,8 +2,6 @@ import json
 
 from telegram.ext import Updater, CommandHandler
 
-updater = Updater("") # сюда нужно вставить токен бота
-
 
 def start(update, context):
     """Команда подключения к боту."""
@@ -63,9 +61,14 @@ def describe_me(update, context):
     )
 
 
-updater.dispatcher.add_handler(CommandHandler('start', start))
-updater.dispatcher.add_handler(CommandHandler('help', help))
-updater.dispatcher.add_handler(CommandHandler('stop', stop))
-updater.dispatcher.add_handler(CommandHandler('count', user_count))
-updater.dispatcher.add_handler(CommandHandler('describe', describe_me))
-updater.start_polling(poll_interval=10.0)
+def main():
+    updater = Updater("6047550206:AAGAF_NgE273lecrPUkRWso8h2fQwn0UWyY") # сюда нужно вставить токен бота
+    updater.dispatcher.add_handler(CommandHandler('start', start))
+    updater.dispatcher.add_handler(CommandHandler('help', help))
+    updater.dispatcher.add_handler(CommandHandler('stop', stop))
+    updater.dispatcher.add_handler(CommandHandler('count', user_count))
+    updater.dispatcher.add_handler(CommandHandler('describe', describe_me))
+    updater.start_polling(poll_interval=10.0)
+
+if __name__ == "__main__":
+    main()
