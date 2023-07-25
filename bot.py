@@ -62,7 +62,7 @@ def describe_me(update, context):
 
 
 def main():
-    updater = Updater("6047550206:AAGAF_NgE273lecrPUkRWso8h2fQwn0UWyY") # сюда нужно вставить токен бота
+    updater = Updater("") # сюда нужно вставить токен бота
     updater.dispatcher.add_handler(CommandHandler('start', start))
     updater.dispatcher.add_handler(CommandHandler('help', help))
     updater.dispatcher.add_handler(CommandHandler('stop', stop))
